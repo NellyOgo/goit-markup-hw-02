@@ -32,7 +32,15 @@
 
 .shrift {
     font-family: 'Raleway', sans-serif;
-    color: var(--color-lighter);
+    color: var(--color-one);
+}
+
+.link {
+    color: var(--color-two);
+}
+
+.link:hover {
+    color: var(--color-lightblue);
 }
 
 .shrift:hover {
