@@ -5,54 +5,72 @@
     --color-variable: #4D5AE5 ;
     --color-lightblue: #404BBF;
     --color-lighter: #F4F4FD;
-    --color-light: #E7E9FC;
+    --color-light: #E7E9FC; 
     --font-size16: 16px;
     --font-size56: 56px;
     --font-size36: 36px;
     --font-size18: 18px;
-    --font-weight400: 400;
     --font-weight500: 500;
     --font-weight700: 700;
     --font-weight800: 800;
-    --line-height1: 1;
-    --line-height15: 1.5;
+    --line-height1: 1,0;
+    --line-height15: 1,5;
 }
 
 /*index*/
 .header {
     background-color: var(--color-inverted);
     border-bottom: 1px solid var(--color-light);
+    color: var(--color-one);
     text-align: left;
+    font-style: normal;
     font-size: var(--font-size16);
     font-weight: var(--font-weight500);
     line-height: var(--line-height15);
+    letter-spacing: 0.02em;
     cursor: pointer;
     text-decoration: none;
 }
 
-.shrift {
+.navig-logo {
     font-family: 'Raleway', sans-serif;
-    color: var(--color-one);
+    color: var(--color-two);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
 }
+
+.navig-logoitem:hover,
+.navig-logoitem {
+    color: var(--color-variable);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
 
 .link {
     color: var(--color-two);
+    text-decoration: none;
+    font-style: normal;
 }
 
 .link:hover {
     color: var(--color-lightblue);
+    text-decoration: none;
+    font-style: normal;
 }
 
-.shrift:hover {
-    background-color: var(--color-variable);
-}
 
 body {
     font-family:'Roboto', sans-serif;
-    text-transform: capitalize;
+    color: var(--color-two);
+    font-style: normal;
     text-align: center;
+    background-color: #E5E5E5;
     font-size: var(--font-size16);
     line-height: var(--line-height1);
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 
@@ -78,7 +96,7 @@ font-weight: var(--font-weight700);
 }
 
 .button-one:hover {
-    background-color: var(--color-variable);
+    background-color: var(--color-lightblue);
 }
 
 
@@ -88,7 +106,6 @@ font-weight: var(--font-weight700);
 }
 
 .section-two {
-    background-color: var(--color-inverted);
     border: 1px;
     text-align: center;
     font-size: var(--font-size36);
@@ -98,20 +115,18 @@ font-weight: var(--font-weight700);
 .color-one {
     color: var(--color-one);
     font-weight: var(--font-weight500);
-}
-
-.color-two {
-    color: var(--color-two);
-    font-weight: var(--font-weight400);
+    font-size: 20px;
+    text-decoration: none;
 }
 
 .team {
-    background-color: var(--color-inverted);
+    background-color:var(--color-inverted);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     text-align: center;
-    font-size: var(--font-size36);
-    font-weight: var(--font-weight700);
+    font-size: var(--font-size16);
+    line-height: var(--line-height15);
+    letter-spacing: 0.02em;
 }
 
 .last-section {
@@ -119,33 +134,43 @@ background-color: var(--color-lighter);
 }
 
 .footer {
+    font-family: 'Raleway', sans-serif;
     background-color: var(--color-one);
     color: var(--color-lighter);
+    letter-spacing: 0.03em;
     text-align: left;
-    font-size: var(--font-size18);
-    font-weight: var(--font-weight800);
+    text-decoration: none;
 }
 
+.footer-logo{
+    font-family: 'Raleway', sans-serif;
+    color: var(--color-light);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.footer-text:hover,
 .footer-text {
+    font-family: 'Roboto', sans-serif;
     color: var(--color-light);
     line-height: var(--line-height15);
-    font-weight: var(--font-weight400);
+    letter-spacing: 0.02em;
 }
+
 
 /*portfolio*/
 
-.header:hover {
-    text-decoration: underline;
+.body-two {
+    background-color: var(--color-inverted);
+    color: var(--color-two);
 }
 
 .button-sectionone {
-    background-color: transparent;
-    color: var(--color-variable);
+    background-color: var(--color-light);
+    color: var(--color-lightblue);
     text-align: center;
     border: 1px solid var(--color-light);
     border-radius: 4px;
     font-family: inherit;
-    text-align: center;
     font-size: var(--font-size16);
     font-weight: var(--font-weight500);
     line-height: var(--line-height15);
@@ -154,6 +179,7 @@ background-color: var(--color-lighter);
 
 .button-sectionone:hover {
     background-color: var(--color-lightblue);
+    color: var(--color-inverted);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
