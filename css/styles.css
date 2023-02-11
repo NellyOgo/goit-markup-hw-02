@@ -40,13 +40,17 @@
     text-decoration: none;
 }
 
+.navig-logoitem:focus {
+    background-color: var(--color-variable);
+    letter-spacing: 0.03em;
+    box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
 .navig-logoitem:hover,
 .navig-logoitem {
     color: var(--color-variable);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
 }
-
 
 .link {
     color: var(--color-two);
@@ -54,10 +58,13 @@
     font-style: normal;
 }
 
+.link:focus {
+    background-color: var(--color-lightblue);
+    box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
 .link:hover {
     color: var(--color-lightblue);
-    text-decoration: none;
-    font-style: normal;
 }
 
 
@@ -66,7 +73,7 @@ body {
     color: var(--color-two);
     font-style: normal;
     text-align: center;
-    background-color: #E5E5E5;
+    background-color: var(--color-inverted);
     font-size: var(--font-size16);
     line-height: var(--line-height1);
     letter-spacing: 0.02em;
@@ -148,6 +155,13 @@ background-color: var(--color-lighter);
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+
+.footer-text:focus {
+    background: var(--color-variable);
+    box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
 .footer-text:hover,
 .footer-text {
     font-family: 'Roboto', sans-serif;
@@ -175,6 +189,13 @@ background-color: var(--color-lighter);
     font-weight: var(--font-weight500);
     line-height: var(--line-height15);
     cursor: pointer;
+}
+
+.button-sectionone:focus {
+    background-color: var(--color-lightblue);
+    color: var(--color-inverted);
+    box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
 }
 
 .button-sectionone:hover {
